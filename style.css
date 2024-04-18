@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,22 +13,27 @@ body {
 }
 
 .header-container,
+.header,
+.icon-holder,
 .background-image,
-.subject,
-.content-holder {
+.widget,
+.widget-holder {
   min-width: 570px !important;
-}
+} 
 
-h1 {
-  margin-top: 0;
-}
 
-h2 {
-  margin-top: 80px;
+ph {
+  line-height: 120%;
+  margin-bottom: 4px;
 }
 
 p {
-  line-height: 140%;
+  line-height: 150%;
+}
+
+pf {
+  line-height: 150%;
+  color:#a0a0a0;
 }
 
 .background-image {
@@ -70,6 +81,7 @@ p {
   width: 150px; 
   height: 150px;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .icon-text {
@@ -81,31 +93,51 @@ p {
   width: 60%;
   min-width: 10px;
   max-width: 500px;
-  /* 
-  margin: auto;
-  padding-bottom: 0px;
-  */
 }
 
-.subject {
+.content-holder {
   position: absolute;
   margin-top: 100vh;
+  width: 100%;
+  text-align: center;
 }
 
-.subject-container {
+.content {
+  width: 80%;
+  max-width: 1200px; 
+  min-width: 400px; 
+  margin: auto; 
+}
 
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  text-align: center;
+}
+
+.text-holder {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.features-text {
+  flex: 1;
+  margin-top: 30px;
+}
+
+.history-text {
+  flex: 1;
+  margin-top: 40px;
 }
 
 .widget-holder {
-
-}
-
-.widget {
-
-}
-
-.widget-text {
-
+  flex: 2;
 }
 
 input[type="text"] {
@@ -114,10 +146,9 @@ input[type="text"] {
   border: none;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-
   background-color: black;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-size: 16px;
 }
 
@@ -132,7 +163,7 @@ input[type="text"] {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 0px 2px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   min-width: 130px !important;
@@ -148,7 +179,18 @@ input[type="text"] {
   background-color: #4CAF50;
 }
 
-.seperator {
+
+.seperator-sm {
+  width: 100%;
+  clear: both;
+  height: 7px;
+}
+.seperator-med {
+  width: 100%;
+  clear: both;
+  height: 20px;
+}
+.seperator-lg {
   width: 100%;
   clear: both;
   height: 40px;
@@ -171,7 +213,6 @@ a:hover {
 .display-link {
   display: inline-block;
   width: 160px;
-  margin-top: 50px;
 }
 
 #discord-logo {
@@ -181,7 +222,7 @@ a:hover {
 
 .discord-logo-span {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 8px;
   vertical-align: top;
 }
 
@@ -194,11 +235,16 @@ a:hover {
 }
 
 .discord-blue {
-  background-color: #7289da;
+  background-color: #6570f6;
 }
 
-@media (max-width: 800px) {
-  .content {
-    min-width: 94% !important;
+
+@media (max-width: 1100px) {
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .features-text {
+    margin-top: 0px;
   }
 }
