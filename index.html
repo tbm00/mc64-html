@@ -1,275 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
-	  <meta name='viewport' content='width=device-width' />
-  
-  	<meta property="og:title" content="MC64"/>
-    <meta property="og:description" content="MC64 is a cracked semi-anarchy Minecraft server with claims, gangs, ranks, an economy, and minimal moderation. We allow in-game hacks and have few ⁠rules."/>
-	  <meta property="og:image" content=content="/img/bg-hd.png"/>
-	  <meta property="og:type" content="website"/>
-  
+    <meta name='viewport' content='width=device-width' />
+    <meta property="og:title" content="MC64" />
+    <meta property="og:description" content="MC64 is a cracked semi-anarchy Minecraft server with claims, gangs, ranks, an economy, and minimal moderation. We allow in-game hacks and have few ⁠rules." />
+    <meta property="og:image" content=content="/img/bg-hd.png" />
+    <meta property="og:type" content="website" />
     <title>MC64</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #222;
-            color: #fff;		
-        }
-		
-      .container, .background-image, .content-holder { min-width: 570px !important; }
-      
-		h1 {
-			margin-top:0;
-			}
-		
-		h2 {
-			margin-top: 80px; 
-		}
-		
-		.background-image {
-			height: 100vh;
-			width: 100%;
-			clear:both;
-			
-			position: absolute;
-			top: 0;
-			left: 0;
-			
-			background-image: url(/img/bg-hd.png);
-			background-color: rgba(0,0,0,0.7);
-			
-			background-position: center center;
-			 background-repeat: no-repeat; 
-			 -webkit-background-size: cover;
-			 -moz-background-size: cover;
-			 -o-background-size: cover;
-			 background-size: cover;
-	 
-			background-blend-mode: lighten;
-			/* You may add things like width, height, background-size... */
-			
-			opacity: 0.3;
-		}
-		
-		.header {
-		
-			justify-content: center;
-      align-items: center;
-		
-			position: absolute;
-			max-width: 1000%; 
-			z-index: 34; 
-			
-			width: 100%;
-			clear:both;
-			
-			padding-top: min(50px, 10%);
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 
-			
-		}
-		
-        .container {
-            
-			padding-top: 10%; 
-			text-align: center;
+  <body>
+    <!-- TOP PAGE:header -->
+    <div class="background-image"></div>
+    <div class="header">
+      <div class="header-container">
+        <div class="icon-holder">
+          <img id='server_icon' src='/img/icon - small v2.jpg' alt='server-icon' class="icon">
+          <div class="icon-text">
+            <h1>MC64</h1>
+            <p>A cracked, semi-anarchy Minecraft Java server with hacks, claims, gangs, ranks, an economy, and minimal moderation.</p>
+            <p>We allow in-game hacks and have "few" rules... So when you login, be careful who you trust!</p>
+          </div>
+        </div>
+        <div class='seperator'></div>
+        <input type="text" value="play.mc64.wtf" id="one">
+        <button onclick="copyText(this,'one')" id='button_one' class="button">Copy IP</button>
+        <br>
+        <a class='display-link' href='https://discord.gg/acQjaAEBb9' target="_blank">
+          <div class='link-holder discord-blue'>
+            <img id='discord-logo' src='/img/discordlogo.png' alt='discord' height='22' width='30'>
+            <p class='discord-logo-span'>Discord</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class='clear'></div>
 
-			
-        }
-		
-		.content-holder {
-		
-			position: absolute;
+    <!-- MIDDLE PAGE:body -->
+    <div class='body'>
+      <div class="body-container">
+        <div class="widget-holder">
+          <div class='widget-text'>
+            <h2>History</h2>
+            <p> This is the second official release of MC64! Our community started in July 2021 with the initial release of MC64. The server grew and grew, but stopped prematurely due to some critical database errors. The server went offline for a little over a year, but our community stayed alive through Discord (and also through some unofficial servers inspired by MC64). During Summer 2023, I had a bit more time on my hands, so I decide to work on getting the server up and running again. After a couple months of some trials and tribulations, I'm happy to announce the server is now officially open again! </p>
+            <h2>Features</h2>
+            <p> - 1.20.4 PVP & SMP: Use /togglepvp to control your pvp status!</p>
+            <p> - Semi-Anarchy: Hacking, griefing, scamming, and stealing is allowed!</p>
+            <p> - Server Econony: Make money with shops, auctions, warps, and jobs.</p>
+            <p> - Ranking System: Unlock special commands and abilities as you play!</p>
+            <p> - Player Gangs: Team up, create alliances, and toggle friendly-fire!</p>
+            <p> - Multiple Worlds: We have Custom, AMPLIFIED, and Normal biomes!</p>
+            <p> - Expiring Land Claims: Protect your stuff while you play, and raid inactive claims once they expire!</p>
+            <p> - Minimal Moderation: Staff mostly cares about minimizing exploits, dupes, and bigotry.</p>
+            <p> - Not P2W: However we do offer some minor perks for donations!</p>
+            <p> - Open Community: Stay connected to the community via our Discord server!</p>
+            <p> - Cracked: Server is open to everyone across the globe!</p>
+          </div>
 
-			width: 100%;
-			margin: auto;
-			clear:both; 
-			
-			margin-top: 100vh; 
-			
-			text-align: center;
-		
-		}
-		
-		.content {
-			width: 60%;
-      max-width: 600px; 
-			margin: auto; 
-			
-			padding-bottom: 100px; 
-			
-		}
-		
-        input[type="text"] {
-            width: 270px;
-            padding: 10px; 
-            border: none;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
-          
-            background-color: black;
-            color: #fff;
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-        .button {
-            background-color: black;
-            border: none;
-          
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-          
-            color: white;
-            padding: 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
+          <div class='widget'>
+            <widgetbot
+              server="695753473672740965"
+              channel="865755991101538315"
+              width="600"
+              height="600"
+            ></widgetbot>
+            <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+        </div>
+      </div>
+    </div>
 
-          
-            transition: background-color 0.3s ease;
-          
-            min-width: 130px !important;
-            max-width: 130px !important; 
-          
-        }
-        .button:hover {
-            background-color: #1E1E1E;
-        }
-        .button.clicked {
-            background-color: #4CAF50;
-        }
-		
-      .seperator { width: 100%; clear: both; height: 40px;  }
-        
-      a { color: inherit; text-decoration: none; } 
-      a:hover {
-    text-decoration:none; 
-    cursor:pointer;  
-}
-      
-		#one { text-align: center;  }
-      
-      .display_link { display: inline-block; width: 160px; margin-top: 50px; }
-      .blk_link { color: black !important; }
-      #di { margin-top: 8px; padding-right: 3px;  }
-      #co { margin-top: 5px; margin-left: -8px; color: black !important; }
-      
-      .di_span { display: inline-block; margin-top: 12px; vertical-align: top;}
-      .co_span { display: inline-block; margin-top: 12px; vertical-align: top;}
-      
-      .link_cont { border-radius: 15px; margin-left: 10px; margin-right: 10px;  height: 40px; overflow: hidden;  }
-      .disc { background-color: #7289da; }
-      .coffee { background-color: #F3E01C}
-      
-      @media (max-width: 800px) {
-        .content {min-width: 94% !important;}
+    <script>
+      function copyText(button, element_name) {
+        const textToCopy = document.getElementById(element_name).value;
+        navigator.clipboard.writeText(textToCopy).then(function() {
+          button.classList.add("clicked");
+          button.innerHTML = "Copied!";
+          setTimeout(function() {
+            button.classList.remove("clicked");
+          }, 500);
+          setTimeout(function() {
+            button.innerHTML = "Copy IP";
+          }, 1000);
+        }, function(err) {
+          console.error('Could not copy text: ', err);
+        });
       }
-      
-    </style>
-</head>
-<body>
-	
-	<div class="background-image"></div>
-	<div class="header">
-		<div class="container">
-		
-			<h1>MC64</h1>
-			
-			<p>A cracked, semi-anarchy server with hacks, claims, gangs, ranks, an economy, and minimal moderation.</p>
-
-		
-      <div class='seperator'></div>
-      
-			<input type="text" value="play.mc64.wtf" id="one">
-			<button onclick="copyText(this,'one')" id='button_one' class="button">Copy IP</button>
-			
-			<br>
-
-      <a class='display_link' href='https://discord.gg/acQjaAEBb9' target="_blank">
-        <div class='link_cont disc'>
-        <img id='di' src='discord2.png' alt='discord' height='22' width='30'>
-        <p class='di_span'>Discord</p>
-        </div>
-      </a>
-      
-      <a class='display_link blk_link' href='https://www.donate2me.com/' target="_blank">
-        <div class='link_cont coffee'>
-          <img id='co' src='coffee1.png' alt='donate' height='30' width='30'>
-          <p class='co_span'>Donate</p>
-        </div>
-      </a>
-      
-			
-		</div>
-	</div>
-	
-	<div class='clear'></div> 
-	
-	<div class='content-holder'>
-		<div class='content'>
-		
-		
-			<h2>"What is MC64?"</h2>
-			
-			<p> MC64 is a cracked, semi-anarchy Minecraft Java server with claims, gangs, ranks, an economy, and minimal moderation. </p>
-			
-			<p> We allow in-game hacks and have "few" rules... So when you login, be careful who you trust. </p>
-			
-			
-			<h2>MC64 History</h2>
-			
-			<p> This is the second official release of MC64! Our community started in July 2021 with the initial release of MC64. The server grew and grew, but stopped prematurely due to some critical database errors. The server went offline for a little over a year, but our community stayed alive through Discord (and also through some unofficial servers inspired by MC64). During Summer 2023, I had a bit more time on my hands, so I decide to work on getting the server up and running again. After a couple months of some trials and tribulations, I'm happy to announce the server is now officially open again! </p>
-
-			
-            <h2>MC64 Features</h2>
-
-            <p> - 1.20.4 PVP & SMP: Use /togglepvp to control your pvp status! </p> 
-
-            <p> - Semi-Anarchy: Hacking, griefing, scamming, and stealing is allowed! </p>
-
-            <p> - Server Econony: Make money with shops, auctions, warps, and jobs. </p>
-
-            <p> - Ranking System: Unlock special commands and abilities as you play! </p>
-
-            <p> - Player Gangs: Team up, create alliances, and toggle friendly-fire! </p>
-
-            <p> - Multiple Worlds: We have Custom, AMPLIFIED, and Normal biomes! </p>
-
-            <p> - Expiring Land Claims: Protect your stuff while you play, and raid inactive claims once they expire! </p>
-			
-            <p> - Minimal Moderation: Staff mostly cares about minimizing exploits, dupes, and bigotry. </p>
-
-            <p> - Open Community: Stay connected to the community via our Discord server! </p>
-			
-            <p> - Cracked: Server is open to everyone across the globe! </p>
-
-
-		</div>
-	</div>
-
-
-	<script>
-		function copyText(button, element_name) {
-			const textToCopy = document.getElementById(element_name).value;
-			navigator.clipboard.writeText(textToCopy).then(function() {
-				button.classList.add("clicked");
-				button.innerHTML = "Copied!";
-				setTimeout(function() {
-					button.classList.remove("clicked");
-				}, 500);
-				setTimeout(function() {
-					button.innerHTML = "Copy IP";
-				}, 1000);
-			}, function(err) {
-				console.error('Could not copy text: ', err);
-			});
-		}
-	</script>
-</body>
+    </script>
+  </body>
 </html>
