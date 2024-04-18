@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="UTF-8">
+    <meta charset='UTF-8'>
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
     <meta name='viewport' content='width=device-width'/>
-    <meta property="og:title" content="MC64"/>
-    <meta property="og:description" content="MC64 is a cracked semi-anarchy Minecraft server with claims, gangs, ranks, an economy, and minimal moderation. We allow in-game hacks and have few ⁠rules."/>
-    <meta property="og:image" content=content="/img/bg-hd.png"/>
-    <meta property="og:type" content="website"/>
+    <meta property='og:title' content='MC64'/>
+    <meta property='og:description' content='MC64 is a cracked semi-anarchy Minecraft server with claims, gangs, ranks, an economy, and minimal moderation. We allow in-game hacks and have few ⁠rules.'/>
+    <meta property='og:image' content=content='/img/bg-hd.png'/>
+    <meta property='og:type' content='website'/>
     <title>MC64</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel='stylesheet' type='text/css' href='style.css'>
   </head>
 
   <body>
     <!-- TOP PAGE:header -->
-    <div class="background-image"></div>
-    <div class="header">
-      <div class="header-container">
-        <div class="icon-holder">
-          <img id='server_icon' src='/img/icon - small v2.jpg' alt='server-icon' class="icon">
-          <div class="icon-text">
+    <div class='background-image'></div>
+    <div class='header'>
+      <div class='header-container'>
+        <div class='icon-holder'>
+          <img id='server_icon' src='/img/icon - small v2.jpg' alt='server-icon' class='icon'>
+          <div class='icon-text'>
             <h1>MC64</h1>
             <p>A cracked, semi-anarchy Minecraft Java server with hacks, claims, gangs, ranks, an economy, and minimal moderation.</p>
-            <p>We allow in-game hacks and have "few" rules... So when you login, be careful who you trust!</p>
+            <p>We allow in-game hacks and have 'few' rules... So when you login, be careful who you trust!</p>
           </div>
         </div>
         <div class='seperator'></div>
-        <input type="text" value="play.mc64.wtf" id="one">
-        <button onclick="copyText(this,'one')" id='button_one' class="button">Copy IP</button>
+        <input type='text' value='play.mc64.wtf' id='one'>
+        <button onclick='copyText(this,"one")' id='button_one' class='button'>Copy IP</button>
         <br>
-        <a class='display-link' href='https://discord.gg/acQjaAEBb9' target="_blank">
+        <a class='display-link' href='https://discord.gg/acQjaAEBb9' target='_blank'>
           <div class='link-holder discord-blue'>
             <img id='discord-logo' src='/img/discordlogo.png' alt='discord' height='22' width='30'>
             <p class='discord-logo-span'>Discord</p>
@@ -42,8 +42,8 @@
 
     <!-- MIDDLE PAGE:subject -->
     <div class='subject'>
-      <div class="subject-container">
-        <div class="widget-holder">
+      <div class='subject-container'>
+        <div class='widget-holder'>
           <div class='widget-text'>
             <h2>History</h2>
             <p> This is the second official release of MC64! Our community started in July 2021 with the initial release of MC64. The server grew and grew, but stopped prematurely due to some critical database errors. The server went offline for a little over a year, but our community stayed alive through Discord (and also through some unofficial servers inspired by MC64). During Summer 2023, I had a bit more time on my hands, so I decide to work on getting the server up and running again. After a couple months of some trials and tribulations, I'm happy to announce the server is now officially open again! </p>
@@ -63,12 +63,13 @@
 
           <div class='widget'>
             <widgetbot
-              server="695753473672740965"
-              channel="865755991101538315"
-              width="600"
-              height="600"
+              server='695753473672740965'
+              channel='865755991101538315'
+              width='600'
+              height='600'
             ></widgetbot>
-            <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+            <script src='https://cdn.jsdelivr.net/npm/@widgetbot/html-embed'></script>
+          </div>
         </div>
       </div>
     </div>
@@ -77,13 +78,13 @@
       function copyText(button, element_name) {
         const textToCopy = document.getElementById(element_name).value;
         navigator.clipboard.writeText(textToCopy).then(function() {
-          button.classList.add("clicked");
-          button.innerHTML = "Copied!";
+          button.classList.add('clicked');
+          button.innerHTML = 'Copied!';
           setTimeout(function() {
-            button.classList.remove("clicked");
+            button.classList.remove('clicked');
           }, 500);
           setTimeout(function() {
-            button.innerHTML = "Copy IP";
+            button.innerHTML = 'Copy IP';
           }, 1000);
         }, function(err) {
           console.error('Could not copy text: ', err);
