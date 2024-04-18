@@ -8,7 +8,7 @@ body {
 
 .header-container,
 .background-image,
-.body,
+.subject,
 .content-holder {
   min-width: 570px !important;
 }
@@ -83,12 +83,12 @@ h2 {
   */
 }
 
-.body {
+.subject {
   position: absolute;
   margin-top: 100vh;
 }
 
-.body-container {
+.subject-container {
 
 }
 
