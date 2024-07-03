@@ -6,7 +6,7 @@
     <meta name='viewport' content='width=device-width'/>
     <meta property='og:title' content='MC64.wtf'/>
     <meta property='og:description' content='MC64 is a cracked, semi-anarchy Minecraft Java server with hacks, claims, gangs, ranks, an economy, and minimal moderation.'/>
-    <meta property='og:image' content=content='/img/bg - og image v2'/>
+    <meta property='og:image' content='/img/bg - og image v2'/>
     <meta property="og:locale" content="en_US" />
     <meta property='og:type' content='website'/>
     <title>MC64.wtf</title>
@@ -25,45 +25,46 @@
 
   <body>
     <!-- TOP PAGE:header -->
-    <div class='background-image'></div>
-    <div class='header'>
-      <div class='header-container'>
-        <div class='icon-holder'>
-          <img id='server_icon' src='/img/icon - small v2.jpg' alt='server-icon' class='icon'>
-          <div class='icon-text'>
+    <div class='background'></div>
+    <header class='header'>
+      <div class='header-content'>
+        <div class='icon-container'>
+          <img id='server-icon' src='/img/icon - small v2.jpg' alt='server-icon' class='icon'>
+          <div class='server-description'>
             <h1>MC64</h1>
-            <ph>A cracked, semi-anarchy Minecraft Java server with hacks, claims, gangs, ranks, an economy, and minimal moderation.</ph>
-            <ph>We allow in-game hacks and have 'few' rules... So when you login, be careful who you trust!</ph>
+            <p class='server-summary'>A cracked, semi-anarchy Minecraft Java server with hacks, claims, gangs, ranks, an economy, and minimal moderation.</p>
+            <div class='separator-tiny'></div>
+            <p class='server-summary'>We allow in-game hacks and have 'few' rules... So when you login, be careful who you trust!</p>
           </div>
         </div>
-        <div class='seperator-lg'></div>
-        <input type='text' value='play.mc64.wtf' id='one'>
-        <button onclick='copyText(this,"one")' id='button_one' class='button'>Copy IP</button>
-        <div class='seperator-lg'></div>
+        <div class='separator-large'></div>
+        <input type='text' value='play.mc64.wtf' id='server-ip'>
+        <button onclick='copyText(this,"server-ip")' class='button'>Copy IP</button>
+        <div class='separator-large'></div>
         <a class='display-link' href='https://discord.gg/acQjaAEBb9' target='_blank'>
-          <div class='link-holder discord-blue'>
+          <div class='link-container discord'>
             <img id='discord-logo' src='/img/discordlogo.png' alt='discord' height='22' width='30'>
-            <p class='discord-logo-span'>Discord</p>
+            <p class='discord-label'>Discord</p>
           </div>
         </a>
       </div>
-    </div>
+    </header>
     
     <div class='clear'></div>
 
     <!-- MIDDLE PAGE:content -->
-    <div class='content-holder'>
+    <main class='main-content'>
 
-      <div class='content'>
-        <div class='seperator-lg'></div>
+      <div class='content-wrapper'>
+        <div class='separator-large'></div>
         <div class='columns'>
-          <div class='text-holder'>
-            <div class='features-text'>
+          <div class='text-container'>
+            <section class='features-section'>
               <h2>Features</h2>
-              <div class='seperator-sm'></div>
+              <div class='separator-small'></div>
               <p> <b>1.20.4 PVP & SMP</b>: Use /togglepvp to control your pvp status!</p>
               <p> <b>Semi-Anarchy</b>: Hacking, griefing, scamming, and stealing is allowed!</p>
-              <p> <b>Server Econony</b>: Make money with shops, auctions, warps, and jobs.</p>
+              <p> <b>Server Economy</b>: Make money with shops, auctions, warps, and jobs.</p>
               <p> <b>Ranking System</b>: Unlock special commands and abilities as you play!</p>
               <p> <b>Player Gangs</b>: Team up, create alliances, and toggle friendly-fire!</p>
               <p> <b>Multiple Worlds</b>: We have Custom, AMPLIFIED, and Normal biomes!</p>
@@ -72,15 +73,15 @@
               <p> <b>Open Community</b>: Stay connected to the community via our Discord server!</p>
               <p> <b>Not P2W</b>: However we do offer some minor perks for donations!</p>
               <p> <b>Cracked</b>: Server is open to everyone across the globe!</p>
-            </div>
-            <div class='history-text'>
+            </section>
+            <section class='history-section'>
               <h2>History</h2>
-              <div class='seperator-sm'></div>
-              <p> This is the second official release of MC64! Our community started in July 2021 with the initial release of MC64. The server grew and grew, but stopped prematurely due to some critical database errors. The server went offline for a little over a year, but our community stayed alive through Discord (and also through some unofficial servers inspired by MC64). During Summer 2023, I had a bit more time on my hands, so I decide to work on getting the server up and running again. After a couple months of some trials and tribulations, I'm happy to announce the server is now officially open again!</p>
-            </div>
-            <div class='seperator-lg'></div>
+              <div class='separator-small'></div>
+              <p>This is the second official release of MC64! Our community started in July 2021 with the initial release of MC64. The server grew and grew, but stopped prematurely due to some critical database errors. The server went offline for a little over a year, but our community stayed alive through Discord (and also through some unofficial servers inspired by MC64). During Summer 2023, I had a bit more time on my hands, so I decided to work on getting the server up and running again. After a couple months of some trials and tribulations, I'm happy to announce the server is now officially open again!</p>
+            </section>
+            <div class='separator-large'></div>
           </div>
-          <div class='widget-holder'>
+          <div class='widget-container'>
             <div class='widget'>
               <widgetbot
                 server='695753473672740965'
@@ -93,15 +94,15 @@
           </div>
         </div>
         <!-- BOTTOM PAGE:footer -->
-        <div class='footer'>
-          <pf>Copyright &copy; 2021 MC64. Get support on our Discord.</pf>
-        </div>
+        <footer class='footer'>
+          <p class='footer-text'>Copyright &copy; 2021 MC64. Get support on our Discord.</p>
+        </footer>
       </div>
-    </div>
+    </main>
 
     <script>
-      function copyText(button, element_name) {
-        const textToCopy = document.getElementById(element_name).value;
+      function copyText(button, elementId) {
+        const textToCopy = document.getElementById(elementId).value;
         navigator.clipboard.writeText(textToCopy).then(function() {
           button.classList.add('clicked');
           button.innerHTML = 'Copied!';
