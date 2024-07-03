@@ -110,13 +110,10 @@
     justify-content: center;
     text-align: center;
     margin: 40px auto 20px;
-  }
-  
-  .footer-text-basic {
     line-height: 150%;
     color: #a0a0a0;
   }
-
+  
   .footer-basic a {
     text-decoration: underline;
     color: #929292;
