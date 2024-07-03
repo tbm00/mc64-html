@@ -116,6 +116,11 @@
     line-height: 150%;
     color: #a0a0a0;
   }
+
+  .footer-basic a {
+    text-decoration: underline;
+    color: #929292;
+  }
   
   /*@media (max-width: 1100px) {
     .columns-basic {
