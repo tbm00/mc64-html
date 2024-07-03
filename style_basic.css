@@ -1,0 +1,128 @@
+.background-basic {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/img/bg-blur.jpg);
+    background-color: rgba(102, 27, 139, 0.397);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+    opacity: 0.3;
+  }
+  
+  .header-basic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    padding: 20px;
+    z-index: 34;
+  }
+  
+  .header-content-basic {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*.header-title-basic {
+    font-size: 24px;
+    color: white;
+  }*/
+  
+  .button-basic {
+    background-color: black;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 140px;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.441));
+  }
+  
+  .button-basic:hover {
+    background-color: #1E1E1E;
+  }
+  
+  .button-basic.clicked {
+    background-color: #ffaa01;
+  }
+  
+  .main-content-basic {
+    position: absolute;
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .content-wrapper-basic {
+    width: 80%;
+    max-width: 1200px; 
+    min-width: 400px; 
+    margin: auto; 
+  }
+  
+  .columns-basic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .text-container-basic {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-section-basic {
+    flex: 1;
+    text-align: center;
+    text-justify: center;
+    margin-top: 10px;
+  }
+  
+  .widget-container-basic {
+    flex: 2;
+  }
+  
+  .separator-large-basic {
+    width: 100%;
+    height: 40px;
+  }
+  
+  .separator-small-basic {
+    width: 100%;
+    height: 7px;
+  }
+  
+  .footer-basic {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 40px auto 20px;
+  }
+  
+  .footer-text-basic {
+    line-height: 150%;
+    color: #a0a0a0;
+  }
+  
+  /*@media (max-width: 1100px) {
+    .columns-basic {
+      flex-direction: column;
+      align-items: center;
+    }
+    .content-section-basic {
+      margin-top: 0;
+    }
+  }*/
