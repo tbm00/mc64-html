@@ -294,8 +294,9 @@ a:hover {
     height: 0px;
   }
   .widget-container {
-    min-width: 300px;
+    min-width: 400px;
     max-width: 500px;
+    width: 95%;
   }
   .widgetbot {
     width: 100% !important;
