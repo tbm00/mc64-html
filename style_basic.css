@@ -141,7 +141,7 @@
   /* Adjust width for smaller screens */
   @media (max-width: 600px) {
     .responsive-iframe {
-      width: 400px;
+      width: 94%;
       height: 1880px;
     }
 
