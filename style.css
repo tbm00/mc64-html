@@ -100,7 +100,7 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 128%;
-  margin-right: 8px;
+  margin-right: 14px;
 }
 
 .features-section,
@@ -113,6 +113,7 @@ body {
   flex: 2;
   width: 100%;
   max-width: 800px;
+  min-width: 450px;
 }
 
 input[type="text"] {
@@ -226,6 +227,9 @@ a:hover {
   }
   .features-section {
     margin-top: 0;
+  }
+  .text-container {
+    margin-right: 0px;
   }
 }
 
