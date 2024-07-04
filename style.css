@@ -65,6 +65,7 @@ body {
   text-align: left;
   width: 60%;
   max-width: 515px;
+  padding-right:10px;
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.441));
 }
 
@@ -91,6 +92,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  min-width: 380px;
 }
 
 .text-container {
@@ -109,10 +111,12 @@ body {
 
 .widget-container {
   flex: 2;
+  width: 100%;
+  max-width: 500px;
 }
 
 input[type="text"] {
-  width: 270px;
+  width: 220px;
   padding: 10px;
   text-align: center;
   border: none;
@@ -226,9 +230,61 @@ a:hover {
 
 @media (max-width: 600px) {
   .header {
-    padding-top: 20px;
+    padding-top: 20%;
   }
   .header-content {
     padding-top: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  input[type="text"] {
+    font-size: 12px;
+    width: 160px;
+  }
+  .button {
+    font-size: 12px;
+    width: 90px;
+  }
+  .display-link {
+    width: 160px;
+  }
+  #discord-logo {
+    margin-top: 4px;
+    padding-right: 2px;
+  }
+  .discord-label {
+    margin-top: 6px;
+  }
+  .link-container {
+    border-radius: 15px;
+    margin: 0 10px;
+    height: 30px;
+  }
+  .content-wrapper {
+    width: 100%;
+    max-width: 1200px; 
+    min-width: 200px; 
+    margin: auto; 
+  }
+  .columns {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .separator-small {
+    width: 100%;
+    height: 0px;
+  }
+  .widget-container {
+    min-width: 380px;
+  }
+  .widgetbot {
+    width: 100% !important;
   }
 }

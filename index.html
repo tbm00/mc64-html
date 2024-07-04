@@ -43,7 +43,7 @@
         <div class='separator-large'></div>
         <a class='display-link' href='https://discord.gg/acQjaAEBb9' target='_blank'>
           <div class='link-container discord'>
-            <img id='discord-logo' src='/img/discordlogo.png' alt='discord' height='22' width='30'>
+            <img id='discord-logo' src='/img/discordlogo.png' alt='discord' height='21' width='28'>
             <p class='discord-label'>Discord</p>
           </div>
         </a>
@@ -86,7 +86,7 @@
               <widgetbot
                 server='695753473672740965'
                 channel='865755991101538315'
-                width='500'
+                width='100%'
                 height='750'
               ></widgetbot>
               <script src='https://cdn.jsdelivr.net/npm/@widgetbot/html-embed'></script>
@@ -122,5 +122,23 @@
         });
       }
     </script>
+    <!--<script>
+      function resizeWidget() {
+        const widgetbot = document.getElementById('widgetbot');
+        if (window.innerWidth <= 600) {
+          widgetbot.setAttribute('width', '350');
+        } else if (window.innerWidth <= 450) {
+          widgetbot.setAttribute('width', '300');
+        } else {
+          widgetbot.setAttribute('width', '500');
+        }
+      }
+
+      // Initial call to set the correct width
+      resizeWidget();
+
+      // Add event listener to resize widget on window resize
+      window.addEventListener('resize', resizeWidget);
+    </script>-->
   </body>
 </html>

@@ -129,3 +129,16 @@
       margin-top: 0;
     }
   }*/
+
+  .responsive-iframe {
+    width: 640px;
+    height: 1770px;
+  }
+  
+  /* Adjust width for smaller screens */
+  @media (max-width: 600px) {
+    .responsive-iframe {
+      width: 400px;
+      height: 1880px;
+    }
+  }
