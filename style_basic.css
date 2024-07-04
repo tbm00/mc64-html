@@ -91,7 +91,6 @@
     flex: 1;
     text-align: center;
     text-justify: center;
-    margin-top: 10px;
     min-height: 1770px;
   }
   
@@ -116,6 +115,7 @@
     margin: 40px auto 20px;
     line-height: 150%;
     color: #a0a0a0;
+    max-width: 78%;
   }
   
   .footer-basic a {
@@ -141,7 +141,7 @@
   /* Adjust width for smaller screens */
   @media (max-width: 600px) {
     .responsive-iframe {
-      width: 420px;
+      width: 400px;
       height: 1880px;
     }
 

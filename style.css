@@ -112,7 +112,7 @@ body {
 .widget-container {
   flex: 2;
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
 }
 
 input[type="text"] {
@@ -206,6 +206,7 @@ a:hover {
   justify-content: center;
   text-align: center;
   margin: 40px auto 20px;
+  max-width: 78%;
 }
 
 .footer-text {
@@ -246,11 +247,11 @@ a:hover {
   }
   input[type="text"] {
     font-size: 12px;
-    width: 160px;
+    width: 140px;
   }
   .button {
     font-size: 12px;
-    width: 90px;
+    width: 80px;
   }
   .display-link {
     width: 160px;
