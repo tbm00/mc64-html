@@ -33,11 +33,13 @@ body {
   align-items: center;
   position: absolute;
   width: 100%;
+  left: 0;
   padding-top: min(50px, 10%);
   z-index: 34;
 }
 
 .header-content {
+  width: 100%;
   padding-top: 10%;
   text-align: center;
 }
@@ -219,5 +221,14 @@ a:hover {
   }
   .features-section {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding-top: 20px;
+  }
+  .header-content {
+    padding-top: 20px;
   }
 }
