@@ -69,7 +69,7 @@
   .content-wrapper-basic {
     width: 80%;
     max-width: 1200px; 
-    min-width: 400px;
+    min-width: 300px;
     margin: auto; 
   }
   
@@ -147,5 +147,9 @@
 
     .content-section-basic {
       min-height: 1880px;
+    }
+
+    .footer-basic {
+      font-size: 12px;
     }
   }
