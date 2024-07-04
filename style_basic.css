@@ -69,7 +69,7 @@
   .content-wrapper-basic {
     width: 80%;
     max-width: 1200px; 
-    min-width: 400px; 
+    min-width: 400px;
     margin: auto; 
   }
   
@@ -77,12 +77,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-height: 1770px;
   }
   
   .text-container-basic {
     flex: 3;
     display: flex;
     flex-direction: column;
+    min-height: 1770px;
   }
   
   .content-section-basic {
@@ -90,6 +92,7 @@
     text-align: center;
     text-justify: center;
     margin-top: 10px;
+    min-height: 1770px;
   }
   
   .widget-container-basic {
@@ -138,7 +141,11 @@
   /* Adjust width for smaller screens */
   @media (max-width: 600px) {
     .responsive-iframe {
-      width: 400px;
+      width: 420px;
       height: 1880px;
+    }
+
+    .content-section-basic {
+      min-height: 1880px;
     }
   }
