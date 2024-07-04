@@ -92,7 +92,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-width: 380px;
+  min-width: 300px;
 }
 
 .text-container {
@@ -282,7 +282,8 @@ a:hover {
     height: 0px;
   }
   .widget-container {
-    min-width: 380px;
+    min-width: 300px;
+    max-width: 500px;
   }
   .widgetbot {
     width: 100% !important;
