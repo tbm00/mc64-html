@@ -160,6 +160,11 @@ input[type="text"] {
   height: 7px;
 }
 
+.separator-med {
+  width: 100%;
+  height: 20px;
+}
+
 .separator-large {
   width: 100%;
   height: 40px;
