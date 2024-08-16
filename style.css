@@ -109,14 +109,19 @@ mark {
   max-width: 680px;
 }
 
-.features-section {
+.first-txt-section {
 /*  flex: 1;*/
   margin-top: 40px;
 }
 
-.history-section {
+.second-txt-section {
 /*  flex: 1;*/
-  margin-top: 70px;
+  margin-top: 30px;
+}
+
+.last-txt-section {
+/*  flex: 1;*/
+  margin-top: 30px;
 }
 
 .widget-container {
@@ -253,10 +258,13 @@ a:hover {
     padding-left: 35px;
     padding-right: 35px;
   }
-  .history-section {
+  .last-txt-section {
     margin-top: 30px;
   }
-  .features-section {
+  .second-txt-section {
+    margin-top: 30px;
+  }
+  .first-txt-section {
     margin-top: unset;
   }
   .text-container {
