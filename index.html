@@ -6,35 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- LD JSON Tags -->
-    <script type="application/ld+json"> {
+    <script type="application/ld+json">
+    {
       "@context": "https://schema.org",
-      "@type": "VideoGame",
+      "@type": "WebSite",
       "name": "MC64 - Semi-Anarchy Minecraft Server",
       "url": "https://mc64.wtf",
       "description": "MC64 is a cracked, semi-anarchy Minecraft Java server with hacks, claims, gangs, ranks, an economy, and minimal moderation.",
+      "keywords": "Minecraft, Minecraft server, cracked Minecraft server, offline server, semi anarchy, anarchy minecraft, semi-anarchy server, pvp, smp, survival, hacks allowed, grief allowed, no rules, factions, player teams, player economy, land claims, economy, ranks, custom plugins, bukkit, spigot, vanilla",
       "gamePlatform": "Minecraft Java Edition",
-      "operatingSystem": "Cross-platform",
       "gameServer": {
         "@type": "GameServer",
+        "name": "Semi-Anarchy MC64",
         "serverStatus": "Online",
-        "playersOnline": 22
+        "playersOnline": 22,
+        "game": {
+          "@type": "VideoGame",
+          "name": "Minecraft"
+        },
+        "url": "minecraft://play.mc64.wtf",
+        "gamePlatform": "Minecraft Java Edition"
       },
-      "keywords": "Minecraft, Minecraft server, cracked Minecraft server, offline server, semi anarchy, anarchy minecraft, semi-anarchy server, pvp, smp, survival, hacks allowed, grief allowed, no rules, factions, player teams, player economy, land claims, economy, ranks, custom plugins, bukkit, spigot, vanilla",
-      "potentialAction": {
-        "@type": "DonateAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.paypal.com/donate?business=RUZENWQD9FWQW",
-          "actionPlatform": "http://schema.org/DesktopWebPlatform",
-          "inLanguage": "en"
+      "potentialAction": [
+        {
+          "@type": "CommunicateAction",
+          "name": "Copy IP",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://mc64.wtf",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/AndroidPlatform",
+              "http://schema.org/IOSPlatform"
+            ],
+            "inLanguage": "en"
+          }
+        },
+        {
+          "@type": "JoinAction",
+          "name": "Join Discord",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://discord.gg/acQjaAEBb9",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/AndroidPlatform",
+              "http://schema.org/IOSPlatform"
+            ],
+            "inLanguage": "en"
+          }
+        },
+        {
+          "@type": "VoteAction",
+          "name": "Vote for MC64",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://mc64.wtf/vote",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/AndroidPlatform",
+              "http://schema.org/IOSPlatform"
+            ],
+            "inLanguage": "en"
+          }
+        },
+        {
+          "@type": "DonateAction",
+          "name": "Donate to MC64",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.paypal.com/donate?business=RUZENWQD9FWQW",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/AndroidPlatform",
+              "http://schema.org/IOSPlatform"
+            ],
+            "inLanguage": "en"
+          }
         }
-      },
+      ],
       "publisher": {
         "@type": "Organization",
         "name": "MC64",
         "url": "https://mc64.wtf"
       }
-    } </script>
+    }
+    </script>
 
     <!-- SEO Tags -->
     <meta name="title" content="MC64 - Semi-Anarchy Minecraft Server">

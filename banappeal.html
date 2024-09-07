@@ -8,19 +8,34 @@
     <!-- LD JSON Tags -->
     <script type="application/ld+json"> {
       "@context": "https://schema.org",
-      "@type": "VideoGame",
+      "@type": "WebSite",
       "name": "MC64 - Ban Appeal",
       "url": "https://mc64.wtf",
       "description": "MC64 accepts ban appeals! If you believe you were unfairly banned from the Minecraft Java server, you may submit a ban appeal here!.",
-      "gamePlatform": "Minecraft Java Edition",
-      "operatingSystem": "Cross-platform",
       "keywords": "MC64, ban appeal, Minecraft ban appeal, MC64 pardon, server unban, unban request, appeal process, Minecraft ban appeal, MC64 ban dispute, player dispute, server rules, ban review, Minecraft server ban, cracked server ban appeal, Minecraft SMP, rule violation, banned from MC64, ban forgiveness",
+      "gamePlatform": "Minecraft Java Edition",
+      "potentialAction":
+        {
+          "@type": "CommunicateAction",
+          "name": "Appeal Ban",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://mc64.wtf/banappeal",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/AndroidPlatform",
+              "http://schema.org/IOSPlatform"
+            ],
+            "inLanguage": "en"
+          }
+        },
       "publisher": {
         "@type": "Organization",
         "name": "MC64",
         "url": "https://mc64.wtf"
       }
-    } </script>
+    }
+   </script>
 
     <!-- SEO Tags -->
     <meta name="title" content="MC64 - Ban Appeal">
@@ -43,6 +58,7 @@
     <link rel='stylesheet' type='text/css' href='style.css'>
     <link rel='stylesheet' type='text/css' href='style_basic.css'>
   </head>
+
   <body>
     <div class='background-basic'></div>
     <header class='header-basic'>
