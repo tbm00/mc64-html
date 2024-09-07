@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JSON LD Tags -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Custom Resource Pack - MC64",
+      "url": "https://mc64.wtf/packs",
+      "description": "MC64 has some custom mobs and bosses that give great gear. In order to see them you must be using Minecraft v1.19.4 or later, and our custom resource pack! You can download our resource pack here!",
+      "keywords": "cracked custom mobs, MC64 resource pack, Minecraft cracked custom mobs, MC64 custom resources, custom Minecraft boss, Custom Mob Server, minecraft custom boss, MC64 texture pack, custom resource pack, custom texture pack server, anarchy custom mobs, anarchy custom boss",
+      "potentialAction":
+      {
+        "@type": "DownloadAction",
+        "name": "Download MC64's Custom Resource Pack",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://mc64.wtf/packs/Custom_Resource_Pack_v1.zip",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/AndroidPlatform",
+            "http://schema.org/IOSPlatform"
+          ],
+          "inLanguage": "en"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MC64",
+        "url": "https://mc64.wtf"
+      }
+    }
+    </script>
+
+    <!-- SEO Tags -->
+    <meta name="title" content="Custom Resource Pack - MC64">
+    <meta name="description" content="MC64 has some custom mobs and bosses that give great gear. In order to see them you must be using Minecraft v1.19.4 or later, and our custom resource pack!">
+    <meta name="keywords" content="cracked custom mobs, MC64 resource pack, Minecraft cracked custom mobs, MC64 custom resources, custom Minecraft boss, Custom Mob Server, minecraft custom boss, MC64 texture pack, custom resource pack, custom texture pack server, anarchy custom mobs, anarchy custom boss">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="12 days">
+    <meta name="author" content="Tanner McGee">
+
+    <!-- Open Graph Tags -->
+    <meta property='og:title' content='Custom Resource Pack - MC64'/>
+    <meta property='og:description' content='MC64 has some custom mobs and bosses that give great gear. In order to see them you must be using Minecraft v1.19.4 or later, and our custom resource pack!'/>
+    <meta property='og:image' content='/img/bg - og image v2'/>
+    <meta property="og:locale" content="en_US" />
+    <meta property='og:type' content='website'/>
+
+    <title>Custom Resource Pack - MC64</title>
+
+    <link rel='stylesheet' type='text/css' href='style_wide.css'>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
+    <link rel="manifest" href="/site.webmanifest?v=1">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#630f70">
+    <link rel="shortcut icon" href="/favicon.ico?v=1">
+    <meta name="apple-mobile-web-app-title" content="Custom Resource Pack - MC64">
+    <meta name="application-name" content="MC64.wtf">
+    <meta name="msapplication-TileColor" content="#630f70">
+    <meta name="theme-color" content="#630f70">   
+  </head>
+
+  <body>
+    <!-- TOP PAGE:header -->
+    <div class='background'></div>
+    <header class='header'>
+      <div class='header-content'>
+        <section class='grid-section2'>
+          <h1>MC64's Custom Resource Pack</h1>
+          <p class='header-text'>MC64 has some custom mobs and bosses that give great gear.</p>
+          <p class='header-text'>In order to see them you must be using Minecraft v1.19.4 or later, and our custom resource pack!</p>
+          <div class='separator-small'></div>
+          <div class='grid-container2'>
+            <a href='https://mc64.wtf/packs/MC64_Custom_Pack_v1.zip' class='grid-button2' title="Download MC64's Custom Resource Pack v1"><b>MC64_Custom_Pack_v1.zip</b></a>
+            <!--<a href='https://mc64.wtf/packs/MC64_Custom_Pack_v2.zip' class='grid-button2' title="Download MC64's Custom Resource Pack v2"><b>MC64_Custom_Pack_v2.zip</b></a>-->
+          </div>
+        </section>
+        <div class='separator-med'></div>
+        <button onclick="window.location.href='index.html'" class='button-wide'>MC64.wtf - Home</button>
+        <div class='separator-med'></div>
+      </div>
+    </header>
+
+    <script>
+      const buttons = document.querySelectorAll('.grid-button2');
+      const CLICK_EXPIRATION_TIME = 30 * 60 * 1000;
+
+      function applyClickedState() {
+        buttons.forEach(button => {
+          const href = button.href;
+          const clickedButtonData = JSON.parse(localStorage.getItem(href));
+
+          if (clickedButtonData) {
+            const { timestamp } = clickedButtonData;
+            const now = new Date().getTime();
+
+            if (now - timestamp < CLICK_EXPIRATION_TIME) {
+              button.classList.add('clicked');
+            } else {
+              localStorage.removeItem(href);
+              button.classList.remove('clicked');
+            }
+          }
+        });
+      }
+
+      applyClickedState();
+
+      buttons.forEach(button => {
+        button.setAttribute('target', '_blank');
+        button.addEventListener('mousedown', function(event) {
+          if (event.button === 0 || event.button === 1 || event.button === 2) {
+            const href = this.href;
+            const clickedButtonData = {
+              timestamp: new Date().getTime()
+            };
+
+            localStorage.setItem(href, JSON.stringify(clickedButtonData));
+            this.classList.add('clicked');
+          }
+        });
+
+        const url = new URL(button.href);
+      });
+    </script>
+  </body>
+</html>

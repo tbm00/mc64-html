@@ -94,6 +94,43 @@ mark {
   color: rgb(31, 31, 31);
 }
 
+.grid-section2 {
+  margin-top: 28px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 16px;
+  margin-top: 10px;
+}
+
+.grid-button2 {
+  display: flex;
+  /*padding: 20px;*/
+  vertical-align: middle;
+  text-align: center;
+  background-color: #630f70;
+  color: rgb(235, 235, 235);
+  text-decoration: none;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  height: 60px;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.331));
+  flex-flow: nowrap;
+  justify-content: center;
+  padding-top: 18px;
+}
+
+.grid-button2:hover {
+  background-color: #8a26a6;
+}
+
+.grid-button2.clicked {
+  background-color: orange;
+  color: rgb(31, 31, 31);
+}
+
 .button-wide {
   background-color: black;
   border: none;
