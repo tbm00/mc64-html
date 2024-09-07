@@ -109,19 +109,47 @@ mark {
   max-width: 680px;
 }
 
-.first-txt-section {
-/*  flex: 1;*/
+/*.first-txt-section {
+  flex: 1;
   margin-top: 40px;
-}
+}*/
 
 .second-txt-section {
 /*  flex: 1;*/
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .last-txt-section {
 /*  flex: 1;*/
-  margin-top: 30px;
+  margin-top: 28px;
+}
+
+.grid-section {
+  margin-top: 28px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  margin-top: 10px;
+}
+
+.grid-button {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #630f70;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+}
+
+.grid-button:hover {
+  background-color: #8a26a6;
 }
 
 .widget-container {
@@ -162,7 +190,7 @@ input[type="text"] {
 }
 
 .button.clicked {
-  background-color: #ffaa01;
+  background-color: #630f70;
 }
 
 .separator-tiny {
@@ -345,6 +373,9 @@ a:hover {
   .text-container {
     margin-right: 0px;
     max-width: unset;
+  }
+  .grid-button {
+    font-size: 12px;
   }
   .separator-small {
     width: 100%;

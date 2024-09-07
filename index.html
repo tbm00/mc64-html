@@ -15,12 +15,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
     <link rel="manifest" href="/site.webmanifest?v=1">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#661b8b">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#630f70">
     <link rel="shortcut icon" href="/favicon.ico?v=1">
     <meta name="apple-mobile-web-app-title" content="MC64.wtf">
     <meta name="application-name" content="MC64.wtf">
-    <meta name="msapplication-TileColor" content="#661b8b">
-    <meta name="theme-color" content="#661b8b">
+    <meta name="msapplication-TileColor" content="#630f70">
+    <meta name="theme-color" content="#630f70">
   </head>
 
   <body>
@@ -99,6 +99,20 @@
               <div class='separator-small'></div>
               <p>MC64's journey began in July 2021, quickly growing into a thriving community before closing due to critical database issues in July 2022. Fortunately, our community stayed alive through Discord and some unofficial Minecraft servers inspired by MC64. During the summer of 2023, we came together to rebuild the MC64 Minecraft server and relaunched it that September with better hardware and a more robust backup system! Since then, we have added many awesome features suggested by the community, while still adhering to a semi-vanilla SMP experience.</p>
             </section>
+            <section class='grid-section'>
+              <h2>Vote Sites</h2>
+              <div class='grid-container'>
+                <a href='https://www.planetminecraft.com/server/mc64-semi-anarchy-1-20-2/' class='grid-button'>PlanetMinecraft</a>
+                <a href='https://minecraftservers.org/server/655262' class='grid-button'>MinecraftServers.org</a>
+                <a href='https://mcservers.top/server/1334' class='grid-button'>MCServers.top</a>
+                <a href='https://topminecraftservers.org/server/19111' class='grid-button'>TopMinecraftServers</a>
+                <a href='https://minecraft-mp.com/server-s324249' class='grid-button'>Minecraft-MP</a>
+                <a href='https://topg.org/minecraft-servers/server-631724' class='grid-button'>TopG</a>
+                <a href='https://minecraft.buzz/server/8699' class='grid-button'>Minecraft.buzz</a>
+                <a href='https://minecraft-server-list.com/server/500815/' class='grid-button'>Minecraft-Server-List</a>
+                <a href='https://servers-minecraft.net/server-mc64.454' class='grid-button'>Servers-Minecraft</a>
+              </div>
+            </section>
             <div class='separator-large'></div>
           </div>
           <div class='widget-container'>
@@ -107,7 +121,7 @@
                 server='695753473672740965'
                 channel='865755991101538315'
                 width='100%'
-                height='750'
+                height='772'
               ></widgetbot>
               <script src='https://cdn.jsdelivr.net/npm/@widgetbot/html-embed'></script>
             </div>
@@ -141,6 +155,34 @@
           console.error('Could not copy text: ', err);
         });
       }
+    </script>
+    <script>
+      const buttons = document.querySelectorAll('.grid-button');
+
+      buttons.forEach(button => {
+        const url = new URL(button.href);
+        let faviconUrl;
+
+        if (url.hostname === 'minecraftservers.org') {
+          faviconUrl = 'https://minecraftservers.org/static/img/favicon/favicon-32x32.png';
+        } else if (url.hostname === 'servers-minecraft.net') {
+          faviconUrl = 'https://servers-minecraft.net/assets/favicon.png';
+        } else if (url.hostname === 'topminecraftservers.org') {
+          faviconUrl = 'https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/favicon-16x16.png';
+        } else {
+          faviconUrl = `${url.origin}/favicon.ico`;
+        }
+
+        const iconImg = document.createElement('img');
+        iconImg.src = faviconUrl;
+        iconImg.alt = 'favicon';
+        iconImg.width = 16;
+        iconImg.height = 16;
+        iconImg.style.marginRight = '8px';
+        iconImg.style.marginTop = '0px';
+
+        button.prepend(iconImg);
+      });
     </script>
     <!--<script>
       function resizeWidget() {
