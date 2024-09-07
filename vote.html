@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JSON LD Tags -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Vote Site Links - MC64",
+      "url": "https://mc64.wtf",
+      "description": "Voting for the MC64 on Minecraft server lists helps grow the community, so we reward players for voting. When voting online, enter your username in the appropriate text box!",
+      "keywords": "MC64 vote, vote Minecraft server, vote Minecraft server list, vote semi-anarchy Minecraft, vote MC64 semi anarchy, player votes, vote rewards, Minecraft SMP voting, top Minecraft servers, minecraft vote list, vote MC64 server, Minecraft server ranking, vote for cracked server, Minecraft community vote, server list voting",
+      "potentialAction":
+      {
+        "@type": "VoteAction",
+        "name": "Vote for MC64",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://mc64.wtf/vote",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/AndroidPlatform",
+            "http://schema.org/IOSPlatform"
+          ],
+          "inLanguage": "en"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MC64",
+        "url": "https://mc64.wtf"
+      }
+    }
+    </script>
+
+    <!-- SEO Tags -->
+    <meta name="title" content="Vote Site Links - MC64">
+    <meta name="description" content="Voting for the MC64 on Minecraft server lists helps grow the community, so we reward players for voting. When voting online, enter your username in the appropriate text box!">
+    <meta name="keywords" content="MC64 vote, vote Minecraft server, vote Minecraft server list, vote semi-anarchy Minecraft, vote MC64 semi anarchy, player votes, vote rewards, Minecraft SMP voting, top Minecraft servers, minecraft vote list, vote MC64 server, Minecraft server ranking, vote for cracked server, Minecraft community vote, server list voting">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="12 days">
+    <meta name="author" content="Tanner McGee">
+
+    <!-- Open Graph Tags -->
+    <meta property='og:title' content='Vote Site Links - MC64'/>
+    <meta property='og:description' content='Voting for the MC64 on Minecraft server lists helps grow the community, so we reward players for voting. When voting online, enter your username in the appropriate text box!'/>
+    <meta property='og:image' content='/img/bg - og image v2'/>
+    <meta property="og:locale" content="en_US" />
+    <meta property='og:type' content='website'/>
+
+    <title>Vote Site Links - MC64</title>
+
+    <link rel='stylesheet' type='text/css' href='style_wide.css'>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1">
+    <link rel="manifest" href="/site.webmanifest?v=1">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=1" color="#630f70">
+    <link rel="shortcut icon" href="/favicon.ico?v=1">
+    <meta name="apple-mobile-web-app-title" content="Vote Site Links - MC64">
+    <meta name="application-name" content="MC64.wtf">
+    <meta name="msapplication-TileColor" content="#630f70">
+    <meta name="theme-color" content="#630f70">   
+  </head>
+
+  <body>
+    <!-- TOP PAGE:header -->
+    <div class='background'></div>
+    <header class='header'>
+      <div class='header-content'>
+        <section class='grid-section'>
+          <h1>MC64's Vote Sites</h1>
+          <p class='header-text'>Thank you for voting for MC64 on these Minecraft server lists; it helps grow the community!</p>
+          <p class='header-text'>When voting, be sure to enter your username in the appropriate text box.</p>
+          <div class='separator-small'></div>
+          <div class='grid-container'>
+            <a href='https://www.planetminecraft.com/server/mc64-semi-anarchy-1-20-2/' class='grid-button' title="Vote on PlanetMinecraft.com!">PMC</a>
+            <a href='https://minecraftservers.org/server/655262' class='grid-button' title="Vote on MinecraftServers.org!">MCS.org</a>
+            <a href='https://mcservers.top/server/1334' class='grid-button' title="Vote on MCServers.top!">MCS.top</a>
+            <a href='https://topminecraftservers.org/server/19111' class='grid-button' title="Vote on TopMinecraftServers.org!">TopMCS</a>
+            <a href='https://minecraft-mp.com/server-s324249' class='grid-button' title="Vote on Minecraft-MP.com!">MCMP</a>
+            <a href='https://topg.org/minecraft-servers/server-631724' class='grid-button' title="Vote on TopG.org!">TopG</a>
+            <a href='https://minecraft.buzz/server/8699' class='grid-button' title="Vote on Minecraft.buzz!">MC.buzz</a>
+            <a href='https://minecraft-server-list.com/server/500815/' class='grid-button' title="Vote on Minecraft-Server-List.com!">MCSL</a>
+            <a href='https://servers-minecraft.net/server-mc64.454' class='grid-button' title="Vote on Servers-Minecraft.net!">S-MC</a>
+          </div>
+        </section>
+        <div class='separator-med'></div>
+        <button onclick="window.location.href='index.html'" class='button-wide'>MC64.wtf - Home</button>
+        <div class='separator-med'></div>
+      </div>
+    </header>
+
+    <script>
+      const buttons = document.querySelectorAll('.grid-button');
+      const CLICK_EXPIRATION_TIME = 30 * 60 * 1000;
+
+      function applyClickedState() {
+        buttons.forEach(button => {
+          const href = button.href;
+          const clickedButtonData = JSON.parse(localStorage.getItem(href));
+
+          if (clickedButtonData) {
+            const { timestamp } = clickedButtonData;
+            const now = new Date().getTime();
+
+            if (now - timestamp < CLICK_EXPIRATION_TIME) {
+              button.classList.add('clicked');
+            } else {
+              localStorage.removeItem(href);
+              button.classList.remove('clicked');
+            }
+          }
+        });
+      }
+
+      applyClickedState();
+
+      buttons.forEach(button => {
+        button.setAttribute('target', '_blank');
+        button.addEventListener('mousedown', function(event) {
+          if (event.button === 0 || event.button === 1 || event.button === 2) {
+            const href = this.href;
+            const clickedButtonData = {
+              timestamp: new Date().getTime()
+            };
+
+            localStorage.setItem(href, JSON.stringify(clickedButtonData));
+            this.classList.add('clicked');
+          }
+        });
+
+        const url = new URL(button.href);
+        let faviconUrl;
+
+        if (url.hostname === 'minecraftservers.org') {
+          faviconUrl = 'https://minecraftservers.org/static/img/favicon/favicon-32x32.png';
+        } else if (url.hostname === 'servers-minecraft.net') {
+          faviconUrl = 'https://servers-minecraft.net/assets/favicon.png';
+        } else if (url.hostname === 'topminecraftservers.org') {
+          faviconUrl = 'https://www.minecraft.net/etc.clientlibs/minecraftnet/clientlibs/clientlib-site/resources/favicon-16x16.png';
+        } else {
+          faviconUrl = `${url.origin}/favicon.ico`;
+        }
+
+        const iconImg = document.createElement('img');
+        iconImg.src = faviconUrl;
+        iconImg.alt = 'favicon';
+        iconImg.width = 20;
+        iconImg.height = 20;
+        iconImg.style.marginRight = '5px';
+        iconImg.style.marginTop = '0px';
+
+        button.prepend(iconImg);
+      });
+    </script>
+  </body>
+</html>

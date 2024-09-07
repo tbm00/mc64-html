@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #dddddd;
+}
+
+mark {
+  background-color: #630f70;
+  color: #ececec;
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(/img/bg-blur.jpg);
+  background-color: rgba(102, 27, 139, 0.397);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+  opacity: 0.3;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding-top: min(50px, 10%);
+  z-index: 34;
+}
+
+.header-content {
+  max-width: min(90%, 1000px);
+  padding-top: 10%;
+  text-align: center;
+}
+
+.header-text {
+  line-height: 120%;
+  max-width: 78%;
+  display: inline-block;
+  color: #a0a0a0;
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.441));
+}
+
+.grid-section {
+  margin-top: 28px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  margin-top: 10px;
+}
+
+.grid-button {
+  display: flex;
+  /*padding: 20px;*/
+  vertical-align: middle;
+  text-align: center;
+  background-color: #630f70;
+  color: rgb(235, 235, 235);
+  text-decoration: none;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  height: 60px;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.331));
+  flex-flow: nowrap;
+  justify-content: center;
+  padding-top: 18px;
+}
+
+.grid-button:hover {
+  background-color: #8a26a6;
+}
+
+.grid-button.clicked {
+  background-color: orange;
+  color: rgb(31, 31, 31);
+}
+
+.button-wide {
+  background-color: black;
+  border: none;
+  border-radius: 15px 15px 15px 15px;
+  color: #dddddd;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 222px;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.441));
+}
+
+.button-wide:hover {
+  background-color: #1E1E1E;
+}
+
+.button-wide.clicked {
+  background-color: #ffaa01;
+}
+
+.separator-tiny {
+  width: 100%;
+  height: 2px;
+}
+
+.separator-smaller {
+  width: 100%;
+  height: 4px;
+}
+
+.separator-small {
+  width: 100%;
+  height: 7px;
+}
+
+.separator-med {
+  width: 100%;
+  height: 20px;
+}
+
+.separator-large {
+  width: 100%;
+  height: 40px;
+}
+
+h1 {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.641));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
