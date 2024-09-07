@@ -152,6 +152,11 @@ mark {
   background-color: #8a26a6;
 }
 
+.grid-button.clicked {
+  background-color: orange;
+  color: rgb(31, 31, 31);
+}
+
 .widget-container {
   flex: 2;
   width: 100%;

@@ -158,8 +158,46 @@
     </script>
     <script>
       const buttons = document.querySelectorAll('.grid-button');
+      const CLICK_EXPIRATION_TIME = 30 * 60 * 1000;
+
+      function applyClickedState() {
+        buttons.forEach(button => {
+          const href = button.href;
+          const clickedButtonData = JSON.parse(localStorage.getItem(href));
+
+          if (clickedButtonData) {
+            const { timestamp } = clickedButtonData;
+            const now = new Date().getTime();
+
+            if (now - timestamp < CLICK_EXPIRATION_TIME) {
+              button.classList.add('clicked');
+            } else {
+              localStorage.removeItem(href);
+              button.classList.remove('clicked');
+            }
+          }
+        });
+      }
+
+      applyClickedState();
 
       buttons.forEach(button => {
+        button.setAttribute('target', '_blank');
+
+        
+
+        button.addEventListener('mousedown', function(event) {
+          if (event.button === 0 || event.button === 1 || event.button === 2) {
+            const href = this.href;
+            const clickedButtonData = {
+              timestamp: new Date().getTime()
+            };
+
+            localStorage.setItem(href, JSON.stringify(clickedButtonData));
+            this.classList.add('clicked');
+          }
+        });
+
         const url = new URL(button.href);
         let faviconUrl;
 
