@@ -141,7 +141,7 @@ mark {
   text-align: center;
   vertical-align: middle;
   background-color: #630f70;
-  color: white;
+  color: rgb(235, 235, 235);
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease;
