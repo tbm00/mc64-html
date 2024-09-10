@@ -81,7 +81,8 @@
           <div class='separator-small'></div>
           <div class='grid-container'>
             <a href='https://www.planetminecraft.com/server/mc64-semi-anarchy-1-20-2/' class='grid-button' title="Vote on PlanetMinecraft.com!">PMC</a>
-            <a href='https://minecraft-list.gg/server/semi-anarchy-mc64.200' class='grid-button' title="Vote on Minecraft-List.gg!">MCL.gg</a>
+            <a href='https://minecraft.menu/server-semi-anarchy-mc64.3617' class='grid-button' title="Vote on Minecraft.menu!">MC.menu</a>
+            <!--<a href='https://minecraft-list.gg/server/semi-anarchy-mc64.200' class='grid-button' title="Vote on Minecraft-List.gg!">MCL.gg</a>-->
             <a href='https://mcservers.top/server/1334' class='grid-button' title="Vote on MCServers.top!">MCS.top</a>
             <a href='https://topminecraftservers.org/server/19111' class='grid-button' title="Vote on TopMinecraftServers.org!">TopMCS</a>
             <a href='https://minecraft-mp.com/server-s324249' class='grid-button' title="Vote on Minecraft-MP.com!">MC-MP</a>
@@ -139,8 +140,10 @@
         const url = new URL(button.href);
         let faviconUrl;
 
-        if (url.hostname === 'minecraft-list.gg') {
-          faviconUrl = 'https://minecraft-list.gg/favicon.png';
+        if (url.hostname === 'minecraft.menu') {
+          faviconUrl = 'https://minecraft.menu/CSS/apple-icon.ico';
+        //} else if (url.hostname === 'minecraft-list.gg') {
+        //  faviconUrl = 'https://minecraft-list.gg/favicon.png';
         } else if (url.hostname === 'servers-minecraft.net') {
           faviconUrl = 'https://servers-minecraft.net/assets/favicon.png';
         } else if (url.hostname === 'topminecraftservers.org') {
