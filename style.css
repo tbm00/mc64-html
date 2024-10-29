@@ -135,7 +135,7 @@ mark {
   margin-top: 10px;
 }
 
-.grid-button {
+.vote-button {
   display: inline-block;
   padding: 10px;
   text-align: center;
@@ -148,11 +148,11 @@ mark {
   font-size: 15px;
 }
 
-.grid-button:hover {
+.vote-button:hover {
   background-color: #8a26a6;
 }
 
-.grid-button.clicked {
+.vote-button.clicked {
   background-color: orange;
   color: rgb(31, 31, 31);
 }
@@ -379,7 +379,7 @@ a:hover {
     margin-right: 0px;
     max-width: unset;
   }
-  .grid-button {
+  .vote-button {
     font-size: 12px;
   }
   .separator-small {

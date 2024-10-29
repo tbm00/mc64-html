@@ -68,9 +68,8 @@ mark {
   margin-top: 10px;
 }
 
-.grid-button {
+.vote-button {
   display: flex;
-  /*padding: 20px;*/
   vertical-align: middle;
   text-align: center;
   background-color: #630f70;
@@ -79,17 +78,42 @@ mark {
   border-radius: 15px;
   transition: background-color 0.3s ease;
   height: 60px;
+  padding-top: 20px;
   filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.331));
   flex-flow: nowrap;
   justify-content: center;
-  padding-top: 18px;
 }
 
-.grid-button:hover {
+.vote-button:hover {
   background-color: #8a26a6;
 }
 
-.grid-button.clicked {
+.vote-button.clicked {
+  background-color: orange;
+  color: rgb(31, 31, 31);
+}
+
+.dl-button {
+  display: flex;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #630f70;
+  color: rgb(235, 235, 235);
+  text-decoration: none;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  height: 60px;
+  padding-top: 21px;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.331));
+  flex-flow: nowrap;
+  justify-content: center;
+}
+
+.dl-button:hover {
+  background-color: #8a26a6;
+}
+
+.dl-button.clicked {
   background-color: orange;
   color: rgb(31, 31, 31);
 }
