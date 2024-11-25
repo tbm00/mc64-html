@@ -95,7 +95,7 @@ code {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 1770px;
+    min-height: 1800px;
   }
   
   .text-container-basic {
@@ -108,7 +108,7 @@ code {
     flex: 3;
     display: flex;
     flex-direction: column;
-    min-height: 1770px;
+    min-height: 1800px;
   }
   
   .content-section-basic {
@@ -121,7 +121,7 @@ code {
     flex: 1;
     text-align: center;
     text-justify: center;
-    min-height: 1770px;
+    min-height: 1800px;
   }
   
   .widget-container-basic {
@@ -170,7 +170,7 @@ code {
 
   .responsive-iframe {
     width: 640px;
-    height: 1770px;
+    height: 1800px;
   }
   
   /* Adjust width for smaller screens */
