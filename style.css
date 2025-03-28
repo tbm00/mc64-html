@@ -79,6 +79,13 @@ mark {
   color: #a0a0a0;
 }
 
+.donation-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .main-content {
   position: absolute;
   margin-top: 100vh;
