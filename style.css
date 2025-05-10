@@ -45,7 +45,7 @@ mark {
 
 .header-content {
   width: 100%;
-  padding-top: 10%;
+  padding-top: 7%;
   text-align: center;
 }
 
@@ -234,7 +234,7 @@ a:hover {
 
 .display-link {
   display: inline-block;
-  width: 160px;
+  width: 200px;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.441));
 }
 
@@ -259,6 +259,12 @@ a:hover {
 
 .discord {
   background-color: #5865F2;
+}
+
+.bitcoin-donate-btn {
+  width: 140px;
+  height: auto;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.441));
 }
 
 .footer {
@@ -315,7 +321,7 @@ a:hover {
     padding-top: 20%;
   }
   .header-content {
-    padding-top: 20px;
+    padding-top: 0%;
   }
   .icon-container {
     flex-direction: column;
