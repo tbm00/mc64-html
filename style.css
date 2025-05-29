@@ -131,8 +131,12 @@ mark {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 16px;
-  margin-top: 10px;
+  grid-gap: 14px;
+  margin-top: 16px;
+}
+
+.grid-container a:nth-child(10) {
+  grid-column: 2;
 }
 
 .vote-button {
